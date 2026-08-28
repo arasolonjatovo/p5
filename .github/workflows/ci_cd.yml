@@ -34,8 +34,8 @@ jobs:
       
       - name: Run tests
         run: |
-          pytest
+          uv run pytest
 
       - name: Run tests
         run: |
-          pytest --cov=. tests/
+          uv run pytest --cov=. tests/
